@@ -1,0 +1,50 @@
+.mainBlock {
+    align-self: center;
+    max-width: 800px;
+    display: grid;
+    color: var(--font-color-first-section);
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 116px 170px 48px 284px;}
+
+.mainBlock p {
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0.1px;
+text-align: center;
+}
+
+.order {
+font-size: 24px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.2px;
+}
+
+.bigBtn {
+    height: 68px;
+    width: 236px;
+    border-radius: 30px;
+    padding: 16px 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    font-family: Montserrat;
+}
+.btnBlock {
+    display: flex;
+    justify-content: space-evenly;
+}
+.redBtn {
+    background-color: var(--button-color);
+    color: var(--font-color-first-section);
+}
+
+.clearBtn {
+    background-color:unset;
+    border: 1px solid var(--font-color-first-section);
+    color: var(--font-color-first-section);
+}

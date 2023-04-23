@@ -1,0 +1,66 @@
+.orderBlock {
+    max-height: 1350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.orderBlock h2 {
+
+font-size: 44px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: 0.1px;
+text-align: center;
+padding-top: 30px;
+}
+
+.orderBlock h4 {
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0.1px;
+text-align: left;
+color: #FA4A0C;
+padding: 10px 0px;
+}
+
+.orderBlock h3{
+font-size: 40px;
+font-weight: 700;
+line-height: 57px;
+letter-spacing: 0.2px;
+text-align: left;
+padding: 10px 0px;
+}
+.orderBlock h5 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color:#737373;
+    padding: 10px 0px;
+    }
+
+    .orderBlock img {
+    width: 250px;
+    height: 507px;
+}
+
+
+.styleApp {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 507px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.block {
+max-width: 568px;
+justify-content: center;
+padding: 10px;
+}

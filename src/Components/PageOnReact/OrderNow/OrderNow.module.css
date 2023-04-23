@@ -1,0 +1,57 @@
+.inOrderNow {
+        align-self: center;
+        max-width: 1000px;
+        display: grid;
+        color: var(--font-color-first-section);
+        align-items: flex-end;
+        justify-content: center;
+        justify-items: center;
+        grid-template-rows: auto 100px 110px;
+}
+
+.bigBtn {
+    height: 68px;
+    width: 236px;
+    border-radius: 30px;
+    padding: 16px 0px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+.inOrderNow h2 {
+    padding: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+}
+
+.inOrderNow p {
+font-size: 24px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.2px;
+text-align: center;
+}
+
+.btnBlock {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    gap:50px;
+}
+.redBtn {
+    background-color: var(--button-color);
+    color: var(--font-color-first-section);
+}
+
+.clearBtn {
+    background-color:unset;
+    border: 1px solid var(--font-color-first-section);
+    color: var(--font-color-first-section);
+}

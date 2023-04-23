@@ -1,33 +1,53 @@
 import './App.css';
 import React, { Component } from 'react';
-import GoodsList from './Components/GoodsList/GoodsList'
-
+import Logo from './Components/PageOnReact/Logo/Logo';
+import Navigation from './Components/PageOnReact/Navigation/Navigation'
+import MainBlock from './Components/PageOnReact/MainBlock/MainBlock'
+import OrderBlock from './Components/PageOnReact/OrderBlock/OrderBlock'
+import FooterBlock from './Components/PageOnReact/FooterBlock/FooterBlock'
+import OrderNow from './Components/PageOnReact/OrderNow/OrderNow';
 
 
 export default class App extends Component {
   constructor (props) {
     super (props);
     this.state = {
-       goods: [
-  {id: '1', src: '1.jpg', title: 'Настенный светильник Jamiz Bird', price: '20$'},
-  {id: '2', src: '2.jpg', title:'Подвесной светильник 4 лампочки', price: '50$'},
-  {id: '3', src: '3.webp', title:'Потолочный светильник черный с золотом', price: '30$'},
-  {id: '4', src: '4.jpg', title: 'Настольная лампа из страусиных перьев', price: '100$'},
-  {id: '5', src: '5.jpg', title: 'Настольная лампа Gold Rabbit', price:'70$'},
-  {id: '6', src: '6.jpg', title: 'Подвесной светильник CAPELLO ', price: '200$'},
-  {id: '7', src: '7.jpg', title: 'Подвесной светильник VANWERK BALL', price:'120$'},
-  {id: '8', src: '8.jpg', title: 'Бамбуковый абажур для торшера TUVALU ', price: '80$'},
-],
-  
+      navigationList: [
+        {id:1, href: '#', link: 'Home'},
+        {id:2, href: '#', link: 'Product'},
+        {id:3, href: '#', link: 'Faq'},
+        {id:4, href: '#', link: 'Contact'},
+      ]
     }
-   
   }
-
   render() {
       return (
-      <ul>
-        <GoodsList goods={this.state.goods} />
-      </ul>
-    );
+        <>
+       <header>
+       <Logo />
+       <nav >
+        <ul className='navstyle'>
+        <Navigation links={this.state.navigationList} />
+       </ul>
+       </nav>
+       </header>
+      <main>
+        <div className ='mainBlockStyle'>
+        <MainBlock />
+        </div>
+        <OrderBlock />
+      <div className='orderNowBlock'>
+        <OrderNow />
+      </div>
+      <div className='footerBlock'> 
+      <FooterBlock />
+       </div>
+      </main>
+      <footer>
+        {/* при перемещении FooterBlock расположение на странице направильное, 
+        абсолютное позиционирование не помогло */}
+      </footer>
+      </>
+      )
   }
 }
