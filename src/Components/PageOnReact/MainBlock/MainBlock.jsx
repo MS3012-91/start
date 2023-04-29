@@ -1,10 +1,23 @@
 import React, { Component } from 'react'
 import style from './MainBlock.module.css'
 
+const changeBcc = (imagesList) => {
+  imagesList.map (el => backgroundImage = el.card)
+}
+
 export default class MainBlock extends Component {
   render() {
+    const imagesList=this.props;
     return (
-        <div className={style.mainBlock}>
+        <div className={style.mainBlock} foo= {changeBcc(imagesList)}>
+          <div className= {style.scroll}> 
+          <button>
+            {'<'}          
+            </button>
+            <button>
+            {'>'}         
+            </button></div>
+          <div className={style.mainBlockContent}>
         <p>Restaurant app</p>
         <h1>
         Why stay hungry when you can order form Eats 
@@ -15,7 +28,7 @@ export default class MainBlock extends Component {
         <button className= {`${style.bigBtn} ${style.clearBtn}`}> Menu </button>
         </div>
         </div>       
-      
+        </div>
     )
   }
 }
