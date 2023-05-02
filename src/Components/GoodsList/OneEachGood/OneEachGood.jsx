@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styles from './OneEachGood.module.css'
 
-export class OneEachGood extends Component {
+export class OneEachGood  extends Component {
 constructor (props) {
     super (props)
     this.state = {
@@ -10,9 +10,10 @@ constructor (props) {
 }
 
 setCartOpen = (id) => {
-        const cartOpen= this.state;
-        this.setState ({cartOpen : !id.cartOpen});
+        const cartOpen = this.state;
+        this.setState ({cartOpen : !this.state.cartOpen});
         console.log (cartOpen)
+        console.log (this.props.good.id)
   }
   render() {
   const selectedStyle = this.state.cartOpen?styles.active:null;
