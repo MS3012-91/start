@@ -6,20 +6,18 @@ box-sizing: border-box;
 align-items: center;
 }
 
-.window {
+/* .window {
     height: 100%;
-    width: 100%;
+    width: 50%;
     overflow: hidden;
-}
+} */
 
 .allPagesContainer   {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     transition: translate;
     transition-property: transform;
-    transition-duration: 300ms;
+    transition-duration: 10s;
     transition-timing-function: ease-in;
 }
 

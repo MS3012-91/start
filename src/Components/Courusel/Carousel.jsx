@@ -23,7 +23,7 @@ export default function Carousel ({children}) {
     setOffset ((currentOffset)=> {
     const newOffset = currentOffset+PAGE_WIDTH
     console.log (newOffset)
-    return Math.min(newOffset,0)
+    // return Math.min(newOffset,0)
     }) 
   }
 
@@ -33,17 +33,17 @@ export default function Carousel ({children}) {
     const newOffset = currentOffset-PAGE_WIDTH
     const maxOffset = -(PAGE_WIDTH*(page.length-1))
     console.log (newOffset,maxOffset )
-    return Math.max(newOffset,maxOffset);
+    // return Math.max(newOffset,maxOffset);
   }) 
   }
  
- 
+  
   return (
   <div className={style.mainContainer}>
     <AiFillCaretLeft className={style.button} onClick={handleLeft}/> 
     <div className={style.window}>
         <div className={style.allPagesContainer} 
-        style={{transform:`translateX(${offset}px)`}}>
+        style={{transform:`translateX(${offset}px)`} }>
           {page}
         </div>
         </div>
