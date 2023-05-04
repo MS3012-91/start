@@ -30,7 +30,7 @@
 // }
 
 
-import style from './App.css';
+import styles from './App.css';
 import React, { Component } from 'react';
 import Logo from './Components/PageOnReact/Logo/Logo';
 import Navigation from './Components/PageOnReact/Navigation/Navigation'
@@ -62,8 +62,8 @@ export default class App extends Component {
   </header>
 
  <main>
-   <div className ={style.mainBlockStyle}>
-   <MainBlock />
+   <div >
+   <MainBlock className ={styles.mainBlockStyle}/>
    </div>
    <OrderBlock />
  <div className='orderNowBlock'>
