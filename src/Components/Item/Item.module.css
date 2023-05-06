@@ -1,0 +1,7 @@
+.item > p{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}

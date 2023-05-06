@@ -4,13 +4,7 @@ import ExploreVarieties from './ExploreVarieties/ExploreVarieties'
 import style from '../OrderBlock/OrderBlock.css'
 
 export default class OrderBlock extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      styleApp : style.app,
-      block: style.explore
-    }
-  }
+ state = {};
  
   render() {
     return (
@@ -18,8 +12,8 @@ export default class OrderBlock extends Component {
         <h2>
         How the app works
         </h2>
-      <AppWork className = {this.state.styleApp} block = {this.state.block}></AppWork> 
-      <ExploreVarieties className = {this.state.styleApp}></ExploreVarieties>
+      <AppWork className = 'app' block = 'explore'></AppWork> 
+      <ExploreVarieties className = 'app'></ExploreVarieties>
         </div>
     )
   }

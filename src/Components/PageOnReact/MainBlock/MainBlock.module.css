@@ -1,11 +1,22 @@
 .mainBlock {
-    align-self: center;
-    max-width: 800px;
-    display: grid;
-    color: var(--font-color-first-section);
-    align-items: center;
+    height: 700px;
+    background-image: url('../EatsResturant/heroBcc.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
     justify-content: center;
-    grid-template-rows: 116px 170px 48px 284px;}
+}
+
+.container {
+    align-self: center;
+    display: grid;
+    align-items: center;
+    max-width: 800px;
+    grid-template-rows: 116px 170px 48px 284px;
+    color: var(--font-color-first-section);
+}
 
 .mainBlock p {
 font-size: 24px;
@@ -34,18 +45,31 @@ letter-spacing: 0.2px;
     letter-spacing: 0.1px;
     text-align: center;
     font-family: Montserrat;
+    cursor: pointer;
 }
+
 .btnBlock {
     display: flex;
     justify-content: space-evenly;
 }
-.redBtn {
+.bigBtn:first-of-type {
     background-color: var(--button-color);
     color: var(--font-color-first-section);
 }
-
-.clearBtn {
+.bigBtn:first-of-type:hover {
     background-color:unset;
     border: 1px solid var(--font-color-first-section);
     color: var(--font-color-first-section);
 }
+
+.bigBtn:last-of-type {
+    background-color:unset;
+    border: 1px solid var(--font-color-first-section);
+    color: var(--font-color-first-section);
+}
+
+.bigBtn:last-of-type:hover {
+    background-color: var(--button-color);
+    color: var(--font-color-first-section);
+}
+

@@ -30,51 +30,85 @@
 // }
 
 
-import styles from './App.css';
+// import style from './App.css';
+// import React, { Component } from 'react';
+// import Logo from './Components/PageOnReact/Logo/Logo';
+// import Navigation from './Components/PageOnReact/Navigation/Navigation'
+// import MainBlock from './Components/PageOnReact/MainBlock/MainBlock'
+// import OrderBlock from './Components/PageOnReact/OrderBlock/OrderBlock'
+// import FooterBlock from './Components/PageOnReact/FooterBlock/FooterBlock'
+// import OrderNow from './Components/PageOnReact/OrderNow/OrderNow';
+
+// export default class App extends Component {
+//   constructor (props) {
+//     super (props);
+//     this.state = { navigationList: [
+//       {id:1, href: '#', link: 'Home'},
+//       {id:2, href: '#', link: 'Product'},
+//       {id:3, href: '#', link: 'Faq'},
+//       {id:4, href: '#', link: 'Contact'},
+//     ]
+//   } }
+//   render() {
+//     return (<>
+
+//   <header>
+//   <Logo />
+//   <nav >
+//    <ul className='navstyle'>
+//    <Navigation links={this.state.navigationList} />
+//   </ul>
+//   </nav>
+//   </header>
+
+//  <main>
+//    <MainBlock />
+ 
+//    <OrderBlock />
+//  <div className='orderNowBlock'>
+//    <OrderNow />
+//  </div>
+//  </main>
+
+//  <footer>
+//   <div className='footerBlock'> <FooterBlock /></div>
+//  </footer>
+//  </>
+//  )
+// }
+// }
+
+// import React, { Component } from 'react'
+// import BoxParams from './Components/BoxParams/BoxParams'
+// import LoadingUsers from './Components/LoadingUsers/LoadingUsers'
+
+// export class App extends Component {
+//   render() {
+//     return (
+//       <>
+//       <BoxParams/>
+//       <LoadingUsers/></>
+//     )
+//   }
+// }
+
+// export default App
+
+
+import style from './App.css';
 import React, { Component } from 'react';
-import Logo from './Components/PageOnReact/Logo/Logo';
-import Navigation from './Components/PageOnReact/Navigation/Navigation'
-import MainBlock from './Components/PageOnReact/MainBlock/MainBlock'
-import OrderBlock from './Components/PageOnReact/OrderBlock/OrderBlock'
-import FooterBlock from './Components/PageOnReact/FooterBlock/FooterBlock'
-import OrderNow from './Components/PageOnReact/OrderNow/OrderNow';
+import Item from './Components/Item/Item'
 
-export default class App extends Component {
-  constructor (props) {
-    super (props);
-    this.state = { navigationList: [
-      {id:1, href: '#', link: 'Home'},
-      {id:2, href: '#', link: 'Product'},
-      {id:3, href: '#', link: 'Faq'},
-      {id:4, href: '#', link: 'Contact'},
-    ]
-  } }
+
+export default class 
+ extends Component {
   render() {
-    return (<>
-
-  <header>
-  <Logo />
-  <nav >
-   <ul className='navstyle'>
-   <Navigation links={this.state.navigationList} />
-  </ul>
-  </nav>
-  </header>
-
- <main>
-   <div >
-   <MainBlock className ={styles.mainBlockStyle}/>
-   </div>
-   <OrderBlock />
- <div className='orderNowBlock'>
-   <OrderNow />
- </div>
- </main>
-
- <footer>
-  <div className='footerBlock'> <FooterBlock /></div>
- </footer>
- </>
- )
+    return (
+      <div className='container'>
+        <Item />
+        </div>
+    )
+  }
 }
-}
+
+
